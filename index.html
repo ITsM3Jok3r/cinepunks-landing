@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title data-i18n="meta.title">CineVerse — Il tuo universo cinematografico</title>
+<meta name="description" content="CineVerse sincronizza la tua libreria Trakt, il calendario delle uscite e le tue liste in un'unica app veloce e senza pensieri." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <img class="brand-mark" src="assets/icon.png" alt="CineVerse" />
+      <span class="brand-name">CineVerse</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#funzionalita" data-i18n="nav.features">Funzionalità</a>
+      <a href="#screenshot" data-i18n="nav.screenshots">Screenshot</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contatti" data-i18n="nav.contact">Contatti</a>
+    </nav>
+    <div class="dl-switch nav-cta" id="dlSwitch">
+      <button class="btn btn-primary dl-btn" id="dlBtn" aria-haspopup="listbox" aria-expanded="false">
+        <span data-i18n="nav.cta">Scarica ora</span>
+        <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="dl-menu" id="dlMenu" role="listbox">
+        <li role="option">
+          <a href="https://apps.apple.com/it/app/cineverse/id6787004770" target="_blank" rel="noopener">
+            <svg class="platform-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701" /></svg>
+            <span data-i18n="nav.ios">iOS</span>
+          </a>
+        </li>
+        <li role="option" class="dl-disabled" aria-disabled="true">
+          <svg class="platform-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z" /></svg>
+          <span data-i18n="nav.android">Android — presto</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="lang-switch" id="langSwitch">
+      <button class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+        <span id="langBtnLabel">IT</span>
+        <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="lang-menu" id="langMenu" role="listbox">
+        <li role="option" data-lang="it">Italiano</li>
+        <li role="option" data-lang="en">English</li>
+        <li role="option" data-lang="es">Español</li>
+        <li role="option" data-lang="fr">Français</li>
+        <li role="option" data-lang="de">Deutsch</li>
+      </ul>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Traccia · Scopri · Rivivi</p>
+        <h1 data-i18n-html="hero.title">Ogni film.<br>Ogni serie. Un solo universo.</h1>
+        <p class="hero-sub" data-i18n="hero.sub">
+          CineVerse sincronizza la tua libreria Trakt, il calendario delle uscite
+          e le tue liste in un'unica app veloce e senza pensieri.
+        </p>
+        <div class="hero-actions" id="download">
+          <a class="btn btn-primary" href="https://apps.apple.com/it/app/cineverse/id6787004770" target="_blank" rel="noopener">
+            <svg class="platform-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701" /></svg>
+            <span data-i18n="hero.appstore">Scarica su App Store</span>
+          </a>
+          <a class="btn btn-ghost" href="#" aria-disabled="true">
+            <svg class="platform-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z" /></svg>
+            <span data-i18n="hero.googleplay">Google Play — presto</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="phone phone-hero">
+          <div class="phone-notch"></div>
+          <div class="phone-screen" id="mockHome"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="funzionalita">
+    <div class="section-inner">
+      <p class="eyebrow center" data-i18n="features.eyebrow">Funzionalità</p>
+      <h2 class="center" data-i18n="features.title">Tutto quello che serve, niente di superfluo</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" /></svg>
+          </div>
+          <h3 data-i18n="feature1.title">Sync con Trakt</h3>
+          <p data-i18n="feature1.desc">Il tuo profilo Trakt sempre aggiornato: watchlist, cronologia e valutazioni incluse.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" /><path d="M8 14h.01" /><path d="M12 14h.01" /><path d="M16 14h.01" /><path d="M8 18h.01" /><path d="M12 18h.01" /><path d="M16 18h.01" /></svg>
+          </div>
+          <h3 data-i18n="feature2.title">Calendario episodi</h3>
+          <p data-i18n="feature2.desc">Non perdere una puntata: uscite di film e serie organizzate giorno per giorno.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h.01" /><path d="M3 12h.01" /><path d="M3 19h.01" /><path d="M8 5h13" /><path d="M8 12h13" /><path d="M8 19h13" /></svg>
+          </div>
+          <h3 data-i18n="feature3.title">Liste e collezioni</h3>
+          <p data-i18n="feature3.desc">Crea, condividi e scopri collezioni curate dalla community.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z" /><circle cx="12" cy="12" r="10" /></svg>
+          </div>
+          <h3 data-i18n="feature4.title">Continua a guardare</h3>
+          <p data-i18n="feature4.desc">Riprendi da dove hai lasciato, episodio dopo episodio, senza cercare.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg>
+          </div>
+          <h3 data-i18n="feature5.title">Social</h3>
+          <p data-i18n="feature5.desc">Segui amici, leggi recensioni e scopri cosa sta guardando la community.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6" /><path d="m4 14 6-6 2-3" /><path d="M2 5h12" /><path d="M7 2h1" /><path d="m22 22-5-10-5 10" /><path d="M14 18h6" /></svg>
+          </div>
+          <h3 data-i18n="feature6.title">Multi-lingua & tema</h3>
+          <p data-i18n="feature6.desc">Italiano, English, Español, Français, Deutsch. Tema chiaro o scuro a scelta.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="screenshot">
+    <div class="section-inner">
+      <p class="eyebrow center" data-i18n="screenshots.eyebrow">Screenshot</p>
+      <h2 class="center" data-i18n="screenshots.title">Un'app, ogni schermata al posto giusto</h2>
+      <div class="gallery">
+        <figure class="gallery-item">
+          <div class="phone phone-sm">
+            <div class="phone-notch"></div>
+            <div class="phone-screen" id="mockHomeSmall"></div>
+          </div>
+          <figcaption data-i18n="screenshots.home">Home</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <div class="phone phone-sm">
+            <div class="phone-notch"></div>
+            <div class="phone-screen" id="mockDiscover"></div>
+          </div>
+          <figcaption data-i18n="screenshots.discover">Scopri</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <div class="phone phone-sm">
+            <div class="phone-notch"></div>
+            <div class="phone-screen" id="mockCalendar"></div>
+          </div>
+          <figcaption data-i18n="screenshots.calendar">Calendario</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <div class="phone phone-sm">
+            <div class="phone-notch"></div>
+            <div class="phone-screen" id="mockProfile"></div>
+          </div>
+          <figcaption data-i18n="screenshots.profile">Profilo</figcaption>
+        </figure>
+      </div>
+      <p class="note" data-i18n="screenshots.note">Anteprime segnaposto — verranno sostituite con gli screenshot reali dell'app.</p>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="section-inner section-narrow">
+      <p class="eyebrow center" data-i18n="faq.eyebrow">FAQ</p>
+      <h2 class="center" data-i18n="faq.title">Domande frequenti</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary data-i18n="faq1.q">Cos'è CineVerse?</summary>
+          <p data-i18n="faq1.a">Un'app per tracciare film e serie TV che segui, con calendario uscite, liste personali e collezioni condivise con la community.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq2.q">Serve un account Trakt?</summary>
+          <p data-i18n="faq2.a">Sì, CineVerse usa Trakt per sincronizzare cronologia, watchlist e valutazioni tra tutti i tuoi dispositivi.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq3.q">È gratis?</summary>
+          <p data-i18n="faq3.a">L'app è gratuita. I dettagli su eventuali funzionalità aggiuntive saranno comunicati al lancio.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq4.q">Su quali piattaforme è disponibile?</summary>
+          <p data-i18n="faq4.a">iOS disponibile ora su App Store. Android in arrivo su Google Play.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq5.q">I miei dati sono al sicuro?</summary>
+          <p data-i18n="faq5.a">Sì. CineVerse non richiede credenziali proprie: l'accesso avviene tramite l'autenticazione ufficiale Trakt, e nessun dato sensibile viene salvato in chiaro sul dispositivo.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq6.q">Come segnalo un problema o richiedo una funzionalità?</summary>
+          <p data-i18n="faq6.a">Scrivi all'indirizzo indicato nella sezione Contatti qui sotto.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contatti">
+    <div class="section-inner section-narrow center">
+      <p class="eyebrow center" data-i18n="contact.eyebrow">Contatti</p>
+      <h2 data-i18n="contact.title">Domande, feedback, collaborazioni</h2>
+      <p class="hero-sub" data-i18n="contact.sub">Scrivici, rispondiamo il prima possibile.</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" id="supportLink" href="https://itsm3jok3r.github.io/cineverse-terms-and-privacy/support.html" data-i18n="contact.support">Supporto</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> CineVerse. <span data-i18n="footer.rights">Tutti i diritti riservati.</span></span>
+    <div class="footer-links">
+      <a id="privacyLink" href="https://itsm3jok3r.github.io/cineverse-terms-and-privacy/privacy.html" data-i18n="footer.privacy">Privacy</a>
+      <a id="termsLink" href="https://itsm3jok3r.github.io/cineverse-terms-and-privacy/terms.html" data-i18n="footer.terms">Termini</a>
+      <a id="footerSupportLink" href="https://itsm3jok3r.github.io/cineverse-terms-and-privacy/support.html" data-i18n="contact.support">Supporto</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
