@@ -289,7 +289,7 @@ const TRANSLATIONS = {
 };
 
 const LANG_LABELS = { it: "IT", en: "EN", es: "ES", fr: "FR", de: "DE" };
-const LEGAL_BASE = "https://itsm3jok3r.github.io/cineverse-terms-and-privacy/";
+const LEGAL_BASE = "https://itsm3jok3r.github.io/cinepunks-terms-and-privacy/";
 const SUPPORTED_LANGS = Object.keys(TRANSLATIONS);
 const STORAGE_KEY = "cinepunks.landing.lang";
 
