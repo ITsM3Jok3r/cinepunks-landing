@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mp.cineverse.app",
+      "sha256_cert_fingerprints": [
+        "81:E3:BF:71:1F:2E:35:E5:60:63:50:0A:BB:CF:97:CF:EA:9D:A7:54:5B:18:0D:AE:36:6B:95:0F:0C:9B:33:1E"
+      ]
+    }
+  }
+]
