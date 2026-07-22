@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy policy — CinePunks</title>
+<meta name="description" content="Privacy policy di CinePunks: dati trattati, finalità, servizi terzi e diritti dell'utente." />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="https://cinepunks.app/">
+      <img class="brand-mark" src="../assets/icon.png" alt="CinePunks" />
+      <span class="brand-name">CinePunks</span>
+    </a>
+    <div class="legal-lang-toggle">
+      <a href="privacy.html" class="active">IT</a>
+      <a href="privacy-en.html">EN</a>
+    </div>
+  </div>
+</header>
+
+<main class="legal-main">
+  <div class="legal-card">
+    <p class="legal-back"><a href="index.html">← Torna ai documenti</a></p>
+    <h1>Privacy policy di CinePunks</h1>
+    <p><strong>Ultimo aggiornamento:</strong> 8 maggio 2026</p>
+
+    <h2>1. Titolare del trattamento</h2>
+    <p>
+      Il titolare del trattamento dei dati personali relativi a CinePunks è
+      <strong>Proto Massimo</strong>. Per richieste relative alla privacy è possibile
+      scrivere a <strong>max.magnus.dev@gmail.com</strong>.
+    </p>
+
+    <h2>2. Che cos'è CinePunks</h2>
+    <p>
+      CinePunks è un'app mobile per consultare, organizzare e sincronizzare informazioni su film,
+      serie TV, episodi, liste, recensioni, attività di visione e profili social collegati a Trakt.
+      L'app usa un backend basato su Supabase Edge Functions e integra servizi esterni come Trakt,
+      TMDB, OMDb, Fanart.tv e NewsAPI.
+    </p>
+
+    <h2>3. Dati trattati</h2>
+    <p>In base alle funzionalità utilizzate, CinePunks può trattare le seguenti categorie di dati:</p>
+    <ul>
+      <li>dati di autenticazione e sessione, inclusi token di sessione CinePunks e token collegati al login Trakt;</li>
+      <li>dati del profilo Trakt, come username, nome visualizzato, avatar, località, stato VIP, data di iscrizione e statistiche pubbliche o autorizzate;</li>
+      <li>dati relativi a watchlist, preferiti, cronologia, avanzamento, contenuti visti, episodi visti e raccolte;</li>
+      <li>liste create dall'utente, titoli, descrizioni, elementi inseriti nelle liste e link di condivisione;</li>
+      <li>recensioni, commenti, risposte, valutazioni e reazioni inviate tramite l'app;</li>
+      <li>relazioni sociali, come profili cercati, utenti seguiti, follower e following, quando disponibili tramite Trakt o backend;</li>
+      <li>preferenze locali dell'app, come lingua, tema e schermata iniziale;</li>
+      <li>dati tecnici necessari al funzionamento dell'app e delle richieste API, come log tecnici, indirizzo IP, user agent, errori e metadati di richiesta, ove registrati dal backend o dai fornitori terzi.</li>
+    </ul>
+
+    <h2>4. Dati salvati sul dispositivo</h2>
+    <p>
+      CinePunks salva alcuni dati localmente sul dispositivo tramite AsyncStorage e database SQLite
+      dell'app. Tra questi possono rientrare il token di sessione, lo stato di bootstrap della
+      sincronizzazione, preferenze di lingua/tema/schermata iniziale, serie aggiunte, episodi,
+      stato di visione, code di sincronizzazione e metadati necessari alla consultazione offline o
+      al miglioramento dell'esperienza.
+    </p>
+    <p>
+      Al logout, l'app rimuove i dati locali collegati alla sessione e svuota le tabelle locali usate
+      per serie, episodi e code di sincronizzazione.
+    </p>
+
+    <h2>5. Finalità del trattamento</h2>
+    <p>I dati sono trattati per:</p>
+    <ul>
+      <li>consentire login, logout e gestione della sessione;</li>
+      <li>mostrare profilo, statistiche, watchlist, preferiti, cronologia, avanzamento e contenuti recenti;</li>
+      <li>sincronizzare con Trakt le azioni richieste dall'utente, come visto/non visto, preferiti, watchlist, recensioni e commenti;</li>
+      <li>creare, aggiornare, consultare e condividere liste o raccolte;</li>
+      <li>mostrare contenuti social e permettere azioni di follow/unfollow;</li>
+      <li>fornire metadati, poster, backdrop, news, valutazioni, cast, provider e contenuti correlati;</li>
+      <li>mantenere sicurezza, stabilità, prevenzione abusi, diagnostica e funzionamento tecnico del servizio.</li>
+    </ul>
+
+    <h2>6. Base giuridica</h2>
+    <p>
+      Per utenti nello Spazio Economico Europeo, il trattamento può basarsi su:
+    </p>
+    <ul>
+      <li>esecuzione di un contratto o misure precontrattuali, per fornire le funzionalità richieste dall'utente;</li>
+      <li>consenso o autorizzazione dell'utente, in particolare per il collegamento dell'account Trakt;</li>
+      <li>legittimo interesse del titolare, per sicurezza, prevenzione abusi, manutenzione e miglioramento tecnico;</li>
+      <li>obbligo legale, se necessario per adempiere a richieste o norme applicabili.</li>
+    </ul>
+
+    <h2>7. Servizi terzi e destinatari</h2>
+    <p>
+      CinePunks può comunicare o ricevere dati da servizi terzi necessari al funzionamento dell'app:
+    </p>
+    <ul>
+      <li><strong>Trakt</strong>, per autenticazione, profilo, watchlist, cronologia, preferiti, liste, commenti, recensioni e funzioni social;</li>
+      <li><strong>Supabase</strong>, per backend, funzioni API, gestione sessioni e dati applicativi lato server;</li>
+      <li><strong>TMDB</strong>, per metadati, immagini e informazioni su film, serie TV e persone;</li>
+      <li><strong>OMDb</strong>, per informazioni e valutazioni collegate ai media;</li>
+      <li><strong>Fanart.tv</strong>, per immagini e risorse grafiche relative ai media;</li>
+      <li><strong>NewsAPI</strong>, per notizie relative al cinema e all'intrattenimento;</li>
+      <li><strong>Expo/EAS</strong>, per build, runtime e servizi tecnici legati alla distribuzione dell'app.</li>
+    </ul>
+    <p>
+      Ciascun fornitore tratta i dati secondo le proprie condizioni e informative privacy. L'utente è
+      invitato a consultare le policy dei rispettivi servizi.
+    </p>
+
+    <h2>8. Trasferimenti extra UE</h2>
+    <p>
+      Alcuni fornitori possono trattare dati in Paesi diversi da quello dell'utente, anche fuori dallo
+      Spazio Economico Europeo. In tali casi, il trattamento avviene secondo gli strumenti e le garanzie
+      previste dai fornitori e dalla normativa applicabile.
+    </p>
+
+    <h2>9. Conservazione</h2>
+    <p>
+      I dati sono conservati per il tempo necessario a fornire il servizio, mantenere la sessione,
+      sincronizzare le azioni dell'utente, adempiere a obblighi legali e proteggere sicurezza e integrità
+      dell'app. I dati locali collegati alla sessione vengono rimossi o ridotti al logout secondo le
+      funzionalità implementate nell'app.
+    </p>
+    <p>
+      I dati inviati a Trakt o ad altri servizi terzi restano soggetti alle impostazioni, ai tempi di
+      conservazione e agli strumenti di cancellazione offerti da tali servizi.
+    </p>
+
+    <h2>10. Cookie e tecnologie simili</h2>
+    <p>
+      CinePunks è un'app mobile e, dalla codebase analizzata, non risulta l'uso diretto di cookie
+      pubblicitari. Alcuni flussi web, come l'autenticazione tramite browser o servizi esterni, possono
+      utilizzare cookie o tecnologie simili gestite dai rispettivi fornitori.
+    </p>
+
+    <h2>11. Minori</h2>
+    <p>
+      CinePunks non è progettata per raccogliere consapevolmente dati personali di minori sotto l'età
+      minima prevista dalla normativa applicabile o dai termini dei servizi terzi integrati. Se un
+      genitore o tutore ritiene che siano stati trattati dati di un minore senza titolo, può contattare
+      il titolare all'indirizzo indicato in questa policy.
+    </p>
+
+    <h2>12. Diritti dell'utente</h2>
+    <p>
+      Nei casi previsti dalla normativa applicabile, l'utente può chiedere accesso, rettifica,
+      cancellazione, limitazione, opposizione al trattamento, portabilità dei dati e revoca del consenso.
+      Le richieste possono essere inviate a <strong>max.magnus.dev@gmail.com</strong>.
+    </p>
+    <p>
+      Per dati gestiti direttamente da Trakt o da altri servizi terzi, l'utente potrebbe dover esercitare
+      i propri diritti anche tramite gli strumenti messi a disposizione da tali fornitori.
+    </p>
+
+    <h2>13. Sicurezza</h2>
+    <p>
+      CinePunks adotta misure tecniche e organizzative ragionevoli per proteggere i dati trattati.
+      Tuttavia, nessun sistema informatico può essere considerato assolutamente sicuro; l'utente deve
+      proteggere i propri account e dispositivi e usare credenziali sicure per i servizi collegati.
+    </p>
+
+    <h2>14. Modifiche alla policy</h2>
+    <p>
+      Questa Privacy policy può essere aggiornata per riflettere modifiche tecniche, funzionali, legali
+      o organizzative. La versione aggiornata sarà pubblicata su questa pagina con indicazione della data
+      di ultimo aggiornamento.
+    </p>
+
+    <h2>15. Contatti</h2>
+    <p>
+      Per domande o richieste relative a questa Privacy policy, scrivere a
+      <strong>max.magnus.dev@gmail.com</strong>.
+    </p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> CinePunks. Tutti i diritti riservati.</span>
+    <div class="footer-links">
+      <a href="https://cinepunks.app/">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Termini</a>
+      <a href="support.html">Supporto</a>
+    </div>
+  </div>
+</footer>
+
+<script src="legal.js"></script>
+</body>
+</html>
