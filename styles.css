@@ -287,25 +287,6 @@ img { max-width: 100%; display: block; }
 
 .phone-sm { width: 180px; height: 374px; border-radius: 30px; border-width: 6px; }
 
-.shot-card {
-  width: 180px;
-  height: 374px;
-  border-radius: 24px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  box-sizing: border-box;
-}
-
-.shot-card img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
 .phone-screen {
   position: absolute;
   inset: 0;
@@ -366,6 +347,12 @@ img { max-width: 100%; display: block; }
 
 .gallery {
   display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.gallery-row {
+  display: flex;
   gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
@@ -374,6 +361,13 @@ img { max-width: 100%; display: block; }
 .gallery-item {
   margin: 0;
   text-align: center;
+}
+
+.plain-shot {
+  width: 180px;
+  height: auto;
+  border-radius: 18px;
+  display: block;
 }
 
 .gallery-item figcaption {
