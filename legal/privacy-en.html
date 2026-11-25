@@ -26,7 +26,7 @@
   <div class="legal-card">
     <p class="legal-back"><a href="index-en.html">← Back to documents</a></p>
     <h1>CinePunks Privacy Policy</h1>
-    <p><strong>Last updated:</strong> May 8, 2026</p>
+    <p><strong>Last updated:</strong> November 25, 2026</p>
 
     <h2>1. Data controller</h2>
     <p>
@@ -52,8 +52,28 @@
       <li>reviews, comments, replies, ratings and reactions submitted through the app;</li>
       <li>social relationship data, such as searched profiles, followed users, followers and following, when available through Trakt or the backend;</li>
       <li>local app preferences, such as language, theme and startup screen;</li>
-      <li>technical data required for app and API operation, such as logs, IP address, user agent, errors and request metadata, where recorded by the backend or third-party providers.</li>
+      <li>technical data required for app and API operation, such as logs, IP address, user agent, errors and request metadata, where recorded by the backend or third-party providers;</li>
+      <li>diagnostics and anonymous usage statistics, described in the next paragraph.</li>
     </ul>
+
+    <h3>Diagnostics and usage statistics</h3>
+    <p>
+      To find and fix errors, CinePunks sends crash and error reports from the app and the backend to
+      <strong>PostHog</strong> (servers in the European Union): error type and message, stack trace, screen
+      or endpoint involved, app version and build, operating system and device model. The app also sends
+      anonymous usage statistics: screens opened, app opened and closed, requests that timed out or were
+      rate limited.
+    </p>
+    <p>
+      This data is not linked to the Trakt account or to other identifying data: it holds no username,
+      token, content identifiers or request addresses, and is tied only to a random identifier created
+      by the installation. It is not used for advertising or for tracking across third-party apps and
+      websites, and sessions are not recorded.
+    </p>
+    <p>
+      Usage statistics can be turned off in <strong>Settings → Advanced → Share anonymous usage
+      stats</strong>. Crash and error reports stay on, because they are needed to keep the service stable.
+    </p>
 
     <h2>4. Data stored on the device</h2>
     <p>
@@ -76,7 +96,8 @@
       <li>create, update, browse and share lists or collections;</li>
       <li>show social content and allow follow/unfollow actions;</li>
       <li>provide metadata, posters, backdrops, news, ratings, cast, providers and related content;</li>
-      <li>maintain security, stability, abuse prevention, diagnostics and technical operation of the service.</li>
+      <li>maintain security, stability, abuse prevention, diagnostics and technical operation of the service;</li>
+      <li>understand, in aggregate and anonymous form, how the app is used, to improve it.</li>
     </ul>
 
     <h2>6. Legal basis</h2>
@@ -84,7 +105,7 @@
     <ul>
       <li>performance of a contract or pre-contractual measures, to provide requested features;</li>
       <li>user consent or authorization, especially for linking a Trakt account;</li>
-      <li>the controller's legitimate interest in security, abuse prevention, maintenance and technical improvement;</li>
+      <li>the controller's legitimate interest in security, abuse prevention, maintenance and technical improvement, including error diagnostics and anonymous usage statistics (which the user can object to in the app's Settings);</li>
       <li>legal obligation, where necessary to comply with applicable laws or lawful requests.</li>
     </ul>
 
@@ -97,7 +118,8 @@
       <li><strong>OMDb</strong>, for media information and ratings;</li>
       <li><strong>Fanart.tv</strong>, for images and media artwork;</li>
       <li><strong>NewsAPI</strong>, for cinema and entertainment news;</li>
-      <li><strong>Expo/EAS</strong>, for builds, runtime and technical services related to app distribution.</li>
+      <li><strong>Expo/EAS</strong>, for builds, runtime and technical services related to app distribution;</li>
+      <li><strong>PostHog</strong> (PostHog Inc., data hosted in the EU), as processor for crash and error reports and anonymous usage statistics.</li>
     </ul>
 
     <h2>8. Transfers outside the EU</h2>
@@ -116,6 +138,10 @@
     <p>
       Data sent to Trakt or other third-party services remains subject to those services' settings,
       retention periods and deletion tools.
+    </p>
+    <p>
+      Error reports and usage statistics stay in PostHog for the retention period of the plan in use,
+      then they are deleted.
     </p>
 
     <h2>10. Cookies and similar technologies</h2>
